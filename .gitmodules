@@ -1,0 +1,3 @@
+[submodule "tet-cpp-client"]
+	path = tet-cpp-client
+	url = https://github.com/EyeTribe/tet-cpp-client.git
