@@ -1,0 +1,20 @@
+//
+//  EyeTribe-Prefix.pch
+//  EyeTribe
+//
+//  Created by Christopher Stawarz on 12/2/16.
+//  Copyright © 2016 The MWorks Project. All rights reserved.
+//
+
+#ifndef EyeTribe_Prefix_pch
+#define EyeTribe_Prefix_pch
+
+#ifdef __cplusplus
+
+#include <MWorksCore/IODevice.h>
+#include <MWorksCore/Plugin.h>
+#include <MWorksCore/StandardComponentFactory.h>
+
+#endif /* defined(__cplusplus) */
+
+#endif /* EyeTribe_Prefix_pch */
