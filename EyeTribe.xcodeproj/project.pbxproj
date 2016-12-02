@@ -37,6 +37,9 @@
 		E16F43621DF1CAF300D13B90 /* EyeTribePlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43611DF1CAF300D13B90 /* EyeTribePlugin.cpp */; };
 		E16F43651DF1CCA600D13B90 /* MWorksCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E16F43641DF1CCA600D13B90 /* MWorksCore.framework */; };
 		E16F43671DF1CCE400D13B90 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E16F43661DF1CCE400D13B90 /* libboost_system.a */; };
+		E16F43741DF1CF1600D13B90 /* gazeapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F436E1DF1CF1600D13B90 /* gazeapi.cpp */; };
+		E16F43751DF1CF1600D13B90 /* gazeapi_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43701DF1CF1600D13B90 /* gazeapi_parser.cpp */; };
+		E16F43761DF1CF1600D13B90 /* gazeapi_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43721DF1CF1600D13B90 /* gazeapi_socket.cpp */; settings = {COMPILER_FLAGS = "-Wno-reorder"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,15 @@
 		E16F43611DF1CAF300D13B90 /* EyeTribePlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EyeTribePlugin.cpp; sourceTree = "<group>"; };
 		E16F43641DF1CCA600D13B90 /* MWorksCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MWorksCore.framework; path = /Library/Frameworks/MWorksCore.framework; sourceTree = "<absolute>"; };
 		E16F43661DF1CCE400D13B90 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = "/Library/Application Support/MWorks/Developer/lib/libboost_system.a"; sourceTree = "<absolute>"; };
+		E16F436A1DF1CF1600D13B90 /* gazeapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gazeapi.h; sourceTree = "<group>"; };
+		E16F436B1DF1CF1600D13B90 /* gazeapi_interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gazeapi_interfaces.h; sourceTree = "<group>"; };
+		E16F436C1DF1CF1600D13B90 /* gazeapi_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gazeapi_types.h; sourceTree = "<group>"; };
+		E16F436E1DF1CF1600D13B90 /* gazeapi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gazeapi.cpp; sourceTree = "<group>"; };
+		E16F436F1DF1CF1600D13B90 /* gazeapi_observable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gazeapi_observable.hpp; sourceTree = "<group>"; };
+		E16F43701DF1CF1600D13B90 /* gazeapi_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gazeapi_parser.cpp; sourceTree = "<group>"; };
+		E16F43711DF1CF1600D13B90 /* gazeapi_parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gazeapi_parser.hpp; sourceTree = "<group>"; };
+		E16F43721DF1CF1600D13B90 /* gazeapi_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gazeapi_socket.cpp; sourceTree = "<group>"; };
+		E16F43731DF1CF1600D13B90 /* gazeapi_socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gazeapi_socket.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E16F43501DF1C71500D13B90 /* External Config */,
+				E16F43681DF1CEE400D13B90 /* tet-cpp-client */,
 				E16F43491DF1C67C00D13B90 /* EyeTribe */,
 				E16F43631DF1CB8400D13B90 /* Frameworks */,
 				E16F43481DF1C67C00D13B90 /* Products */,
@@ -146,6 +159,38 @@
 				E16F43661DF1CCE400D13B90 /* libboost_system.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16F43681DF1CEE400D13B90 /* tet-cpp-client */ = {
+			isa = PBXGroup;
+			children = (
+				E16F43691DF1CF1600D13B90 /* include */,
+				E16F436D1DF1CF1600D13B90 /* src */,
+			);
+			path = "tet-cpp-client";
+			sourceTree = "<group>";
+		};
+		E16F43691DF1CF1600D13B90 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E16F436A1DF1CF1600D13B90 /* gazeapi.h */,
+				E16F436B1DF1CF1600D13B90 /* gazeapi_interfaces.h */,
+				E16F436C1DF1CF1600D13B90 /* gazeapi_types.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E16F436D1DF1CF1600D13B90 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E16F436E1DF1CF1600D13B90 /* gazeapi.cpp */,
+				E16F436F1DF1CF1600D13B90 /* gazeapi_observable.hpp */,
+				E16F43711DF1CF1600D13B90 /* gazeapi_parser.hpp */,
+				E16F43701DF1CF1600D13B90 /* gazeapi_parser.cpp */,
+				E16F43731DF1CF1600D13B90 /* gazeapi_socket.hpp */,
+				E16F43721DF1CF1600D13B90 /* gazeapi_socket.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E16F43761DF1CF1600D13B90 /* gazeapi_socket.cpp in Sources */,
+				E16F43751DF1CF1600D13B90 /* gazeapi_parser.cpp in Sources */,
 				E16F43621DF1CAF300D13B90 /* EyeTribePlugin.cpp in Sources */,
+				E16F43741DF1CF1600D13B90 /* gazeapi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +327,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EyeTribe/EyeTribe-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"tet-cpp-client/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = EyeTribe/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.mworks-project.EyeTribe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
