@@ -40,6 +40,8 @@
 		E16F43741DF1CF1600D13B90 /* gazeapi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F436E1DF1CF1600D13B90 /* gazeapi.cpp */; };
 		E16F43751DF1CF1600D13B90 /* gazeapi_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43701DF1CF1600D13B90 /* gazeapi_parser.cpp */; };
 		E16F43761DF1CF1600D13B90 /* gazeapi_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43721DF1CF1600D13B90 /* gazeapi_socket.cpp */; settings = {COMPILER_FLAGS = "-Wno-reorder"; }; };
+		E16F43791DF1D94300D13B90 /* EyeTribeDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16F43771DF1D94300D13B90 /* EyeTribeDevice.cpp */; };
+		E1AAF6B11DFB482F0032D7A0 /* EyeTribeActions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1AAF6AF1DFB482F0032D7A0 /* EyeTribeActions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		E16F43711DF1CF1600D13B90 /* gazeapi_parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gazeapi_parser.hpp; sourceTree = "<group>"; };
 		E16F43721DF1CF1600D13B90 /* gazeapi_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gazeapi_socket.cpp; sourceTree = "<group>"; };
 		E16F43731DF1CF1600D13B90 /* gazeapi_socket.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = gazeapi_socket.hpp; sourceTree = "<group>"; };
+		E16F43771DF1D94300D13B90 /* EyeTribeDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EyeTribeDevice.cpp; sourceTree = "<group>"; };
+		E16F43781DF1D94300D13B90 /* EyeTribeDevice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTribeDevice.hpp; sourceTree = "<group>"; };
+		E1AAF6AF1DFB482F0032D7A0 /* EyeTribeActions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EyeTribeActions.cpp; sourceTree = "<group>"; };
+		E1AAF6B01DFB482F0032D7A0 /* EyeTribeActions.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EyeTribeActions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,10 @@
 		E16F43491DF1C67C00D13B90 /* EyeTribe */ = {
 			isa = PBXGroup;
 			children = (
+				E16F43781DF1D94300D13B90 /* EyeTribeDevice.hpp */,
+				E16F43771DF1D94300D13B90 /* EyeTribeDevice.cpp */,
+				E1AAF6B01DFB482F0032D7A0 /* EyeTribeActions.hpp */,
+				E1AAF6AF1DFB482F0032D7A0 /* EyeTribeActions.cpp */,
 				E16F43611DF1CAF300D13B90 /* EyeTribePlugin.cpp */,
 				E16F43531DF1C98800D13B90 /* Supporting Files */,
 			);
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1AAF6B11DFB482F0032D7A0 /* EyeTribeActions.cpp in Sources */,
 				E16F43761DF1CF1600D13B90 /* gazeapi_socket.cpp in Sources */,
 				E16F43751DF1CF1600D13B90 /* gazeapi_parser.cpp in Sources */,
+				E16F43791DF1D94300D13B90 /* EyeTribeDevice.cpp in Sources */,
 				E16F43621DF1CAF300D13B90 /* EyeTribePlugin.cpp in Sources */,
 				E16F43741DF1CF1600D13B90 /* gazeapi.cpp in Sources */,
 			);
@@ -378,6 +390,7 @@
 				E16F43571DF1CA0400D13B90 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
 		};
 		E16F435D1DF1CA7300D13B90 /* Build configuration list for PBXAggregateTarget "Everything" */ = {
 			isa = XCConfigurationList;
@@ -385,6 +398,7 @@
 				E16F435E1DF1CA7300D13B90 /* Development */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,11 +9,19 @@
 #ifndef EyeTribe_Prefix_pch
 #define EyeTribe_Prefix_pch
 
+#include <crt_externs.h>
+#include <spawn.h>
+#include <sys/wait.h>
+
 #ifdef __cplusplus
+
+#include <mutex>
 
 #include <MWorksCore/IODevice.h>
 #include <MWorksCore/Plugin.h>
+#include <MWorksCore/StimulusDisplay.h>
 #include <MWorksCore/StandardComponentFactory.h>
+#include <MWorksCore/TrialBuildingBlocks.h>
 
 #endif /* defined(__cplusplus) */
 
